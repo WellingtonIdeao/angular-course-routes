@@ -9,13 +9,18 @@
             <a class="nav-link" [routerLink]="'/login'" (click)="isMenuCollapsed = true">Login</a>
           </li>
           <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" [routerLink]="'/cursos'" (click)="isMenuCollapsed = true">Cursos</a>
+            <a class="nav-link" [routerLink]="['cursos']" (click)="isMenuCollapsed = true">Cursos</a>
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" [routerLink]="['curso', idCurso.value]" (click)="isMenuCollapsed = true">Curso com id</a>
           </li>
         </ul>
       </div>
       <a class="navbar-brand" [routerLink]="''">Rotas Ng2</a>
     </div>
   </nav>
-<div class="container">  
+<div class="container">
+  <p>Entre com o id do curso:</p>
+  <input type="text" #idCurso>
     <router-outlet></router-outlet>
 </div>
