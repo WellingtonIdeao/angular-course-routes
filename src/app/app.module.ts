@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 
 import { CursosModule } from './cursos/cursos.module';
+import { AlunosModule } from './alunos/alunos.module';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { CursosModule } from './cursos/cursos.module';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    CursosModule
+    CursosModule,
+    AlunosModule
   ],  
   providers: [],
   bootstrap: [AppComponent]
