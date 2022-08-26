@@ -11,9 +11,9 @@
           <li class="nav-item" routerLinkActive="active">
             <a class="nav-link" [routerLink]="['cursos']" [queryParams]="{pagina: 1}" (click)="isMenuCollapsed = true">Cursos</a>
           </li>
-          <li class="nav-item" routerLinkActive="active">
+         <!-- <li class="nav-item" routerLinkActive="active">
             <a class="nav-link" [routerLink]="['curso', idCurso.value]" (click)="isMenuCollapsed = true">Curso com id</a>
-          </li>
+          </li>-->
           <li class="nav-item" routerLinkActive="active">
             <a class="nav-link" routerLink="/alunos" (click)="isMenuCollapsed = true">Alunos</a>
           </li>
@@ -23,7 +23,7 @@
     </div>
   </nav>
 <div class="container">
-  <p>Entre com o id do curso:</p>
-  <input type="text" #idCurso (input)="0">
+  <!--<p>Entre com o id do curso:</p>
+  <input type="text" #idCurso (input)="0"> -->
     <router-outlet></router-outlet>
 </div>
