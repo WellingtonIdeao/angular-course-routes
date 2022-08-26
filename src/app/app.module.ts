@@ -7,7 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 
-import { CursosModule } from './cursos/curso.module';
+import { CursosModule } from './cursos/cursos.module';
 
 
 @NgModule({
