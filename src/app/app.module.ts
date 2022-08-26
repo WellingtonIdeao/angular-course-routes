@@ -4,25 +4,23 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { CursosComponent } from './cursos/cursos.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
-import { CursoDetalheComponent } from './curso-detalhe/curso-detalhe.component';
-import { CursoNaoEncontradoComponent } from './curso-nao-encontrado/curso-nao-encontrado.component';
+
+import { CursosModule } from './cursos/curso.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    CursosComponent,
     HomeComponent,
     LoginComponent,
-    CursoDetalheComponent,
-    CursoNaoEncontradoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    CursosModule
   ],  
   providers: [],
   bootstrap: [AppComponent]

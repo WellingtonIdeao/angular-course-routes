@@ -1,6 +1,5 @@
-import { CursosServiceService } from './../cursos/cursos-service.service';
 import { Component, OnDestroy, OnInit } from '@angular/core';
-
+import { CursosService } from '../cursos.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 
@@ -14,7 +13,7 @@ export class CursoDetalheComponent implements OnInit, OnDestroy {
   inscricao!: Subscription;
   curso: any;
 
-  constructor(private activatedRoute: ActivatedRoute, private router: Router ,private cursosService: CursosServiceService) {
+  constructor(private activatedRoute: ActivatedRoute, private router: Router ,private cursosService: CursosService) {
     //this.id = this.route.snapshot.params['id'];
     //console.log(this.route);
   }
