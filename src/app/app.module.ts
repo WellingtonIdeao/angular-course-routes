@@ -7,8 +7,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 
-import { CursosModule } from './cursos/cursos.module';
-import { AlunosModule } from './alunos/alunos.module';
+//import { CursosModule } from './cursos/cursos.module';
+//import { AlunosModule } from './alunos/alunos.module';
 
 
 @NgModule({
@@ -21,8 +21,8 @@ import { AlunosModule } from './alunos/alunos.module';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    CursosModule,
-    AlunosModule
+    //CursosModule,
+    //AlunosModule
   ],  
   providers: [],
   bootstrap: [AppComponent]
