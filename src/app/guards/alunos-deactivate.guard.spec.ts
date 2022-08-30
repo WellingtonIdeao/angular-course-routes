@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { AlunosGuard } from './alunos.guard';
+import { AlunosGuard } from './alunos-deactivate.guard';
 
 describe('AlunosGuard', () => {
   let guard: AlunosGuard;
