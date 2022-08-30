@@ -8,11 +8,11 @@
     </div>
     <div class="mb-3">
         <label for="InputNome" class="form-label">Nome</label>
-        <input type="text" class="form-control" id="InputNome" [(ngModel)]="aluno.nome" name="inputNome">
+        <input type="text" class="form-control" id="InputNome" [(ngModel)]="aluno.nome" name="inputNome" (input)="onInput()">
     </div>
     <div class="mb-3">  
         <label for="InputEmail" class="form-label">Email</label>
-        <input type="email" class="form-control" id="InputEmail" [(ngModel)]="aluno.email" name="inputEmail">
+        <input type="email" class="form-control" id="InputEmail" [(ngModel)]="aluno.email" name="inputEmail" (input)="onInput()">
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
